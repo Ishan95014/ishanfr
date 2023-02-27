@@ -1,0 +1,8 @@
+@font-face {
+    font-family: gloock;
+    src: url(Gloock-Regular.ttf);
+}
+h1 {
+    font-family: gloock;
+    font-size: large;
+}
