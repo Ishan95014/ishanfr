@@ -2,9 +2,11 @@
     font-family: gloock;
     src: url(Gloock-Regular.ttf);
 }
-body{
-    margin-top: 2vh;
+body {
+    display: flex;
+    align-items: center;
 }
+
 h1 {
     font-family: gloock;
     font-size: 10vw;
