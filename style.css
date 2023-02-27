@@ -4,5 +4,7 @@
 }
 h1 {
     font-family: gloock;
-    font-size: large;
+    font-size: 10vw;
+    text-align: center;
+    margin: auto;
 }
