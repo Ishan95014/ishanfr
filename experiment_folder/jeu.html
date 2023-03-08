@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Exercice 4</title>
+    <meta charset="utf-8" />
+    <style>
+      div#terrain_de_jeu {
+        height: 90%;
+        width: 90%;
+        position: relative; /* Add position relative to the parent element */
+      }
+      img {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        z-index: 9999;
+      }
+      p {
+        font-size: 1.5em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      #score {
+        font-size: 1.5em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+      }
+    </style>
+  </head>
+  <body>
+    <p>Clique vite sur le monstre !</p>
+    <div id="terrain_de_jeu">
+    </div>
+    <div id="score">Score: 0</div>
+    <script>
+      // Define variables
+      var terrain = document.getElementById("terrain_de_jeu");
+      var score = 0;
+      var timerId;
+
+      // Function to create a new monster and add it to the playing field
+      function createMonster() {
+        var monster = document.createElement("img");
+        monster.src = "monster.png"; // Set image file path
+        monster.alt = "Monster";
+        monster.classList.add("monster");
+        monster.style.position = "absolute";
+        monster.style.left = Math.random() * terrain.offsetWidth + "px";
+        monster.style.top = Math.random() * terrain.offsetHeight + "px";
+        terrain.appendChild(monster);
+
+        // Set a timer to make the monster angry after 3.5 seconds
+        timerId = setTimeout(function () {
+          monster.style.filter = "hue-rotate(90deg)"; // Change image filter to make it red
+        }, 3500);
+
+        // Add event listener to remove monster when clicked and update score
+        monster.addEventListener("click", function () {
+          clearTimeout(timerId);
+          terrain.removeChild(monster);
+          score++;
+          document.getElementById("score").innerHTML = "Score: " + score;
+        });
+      }
+
+      // Create the first monster
+      createMonster();
+
+      // Set an interval to create a new monster every second
+      var intervalId = setInterval(function () {
+        createMonster();
+      }, 1000);
+
+      // Check for end of game
+      var checkEnd = setInterval(function () {
+        if (terrain.childElementCount === 0) {
+          clearInterval(intervalId);
+          clearInterval(checkEnd);
+          alert("Game over! Final score: " + score);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
