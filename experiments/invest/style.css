@@ -1,0 +1,118 @@
+/* Apply a Material Design color scheme to the page */
+:root {
+  --md-primary-color: #6200ee;
+  --md-secondary-color: #03dac6;
+  --md-background-color: #ffffff;
+  --md-surface-color: #ffffff;
+  --md-on-primary-color: #ffffff;
+  --md-on-secondary-color: #000000;
+  --md-on-background-color: #000000;
+  --md-on-surface-color: #000000;
+}
+
+/* Apply Material Design typography */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+input[type="number"],
+input[type="submit"] {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Apply Material Design layout and spacing */
+body {
+  padding: 1rem;
+  background-color: var(--md-background-color);
+}
+
+#formNtable {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#input_form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  padding: 1rem;
+  background-color: var(--md-surface-color);
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--md-primary-color);
+  box-shadow: 0px 0px 5px var(--md-primary-color);
+}
+
+input[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: var(--md-primary-color);
+  color: var(--md-on-primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3700b3;
+}
+
+#results_table {
+  width: 40vw;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+  background-color: var(--md-surface-color);
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#results_table th,
+#results_table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+#results_table th {
+  font-weight: 500;
+  background-color: var(--md-primary-color);
+  color: var(--md-on-primary-color);
+  border-color: var(--md-primary-color);
+}
+
+#results_table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Apply Material Design data visualization styles */
+#my_dataviz {
+  height: 400px;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project 1</title>
+    <script src="https://d3js.org/d3.v6.js"></script>
+  </head>
+  <body>
+    <h1>Investment Calculator</h1>
+    <div id="formNtable">
+      <form id="input_form">
+        <label for="starting_amount">Starting Amount</label>
+        <input
+          type="number"
+          id="starting_amount"
+          name="starting_amount"
+          step=".01"
+        />
+        <label for="years">After (x) years</label>
+        <input type="number" id="years" name="years" step=".01" />
+        <label for="interest_rate">Yearly Interest Rate</label>
+        <input
+          type="number"
+          id="interest_rate"
+          name="interest_rate"
+          step=".01"
+        />
+        <label for="monthly_contribution">monthly contribution </label>
+        <input
+          type="number"
+          id="monthly_contribution"
+          name="monthly_contribution"
+          step=".01"
+        />
+        <input type="submit" value="Calculate" />
+      </form>
+      <!-- Create a div where the graph will take place -->
+      <div id="my_dataviz"></div>
+    </div>
+    <!-- Results -->
+    <!-- Table -->
+    <table id="results_table"></table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
