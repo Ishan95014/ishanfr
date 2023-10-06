@@ -1,0 +1,14 @@
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Grid will adapt based on the container's width */
+  gap: 16px; /* Gap between images; adjust as necessary */
+}
+
+.showcase-item img {
+  width: 100%; /* Make the image fill its container */
+  height: auto;
+  border-radius: 8px; /* Optional: give the images rounded corners */
+}

@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="showcase-container">
+  {% assign portrait_images = site.static_files | where_exp: "image", "image.path contains '/assets/images/showcase/portrait/'" %}
+  {% assign landscape_images = site.static_files | where_exp: "image", "image.path contains '/assets/images/showcase/landscape/'" %}
+  
+  {% assign portrait_rows = portrait_images.size | divided_by: 4 | ceil %}
+  {% assign landscape_rows = landscape_images.size | divided_by: 3 | ceil %}
+  
+  {% if portrait_rows > landscape_rows %}
+    {% assign total_rows = portrait_rows %}
+  {% else %}
+    {% assign total_rows = landscape_rows %}
+  {% endif %}
+  
+  {% for i in (0..total_rows) %}
+    {%- assign modulo_result = forloop.index | modulo: 2 -%}
+    {%- if modulo_result == 1 -%}
+      <div class="showcase-grid portrait-grid">
+        {% assign start_index = i | times: 4 %}
+        {% assign end_index = start_index | plus: 3 %}
+        {% for j in (start_index..end_index) %}
+          {% assign image = portrait_images[j] %}
+          {% if image %}
+            <img src="{{ image.path }}" alt="Portrait Image">
+          {% endif %}
+        {% endfor %}
+      </div>
+    {%- else -%}
+      <div class="showcase-grid landscape-grid">
+        {% assign start_index = i | divided_by: 2 | times: 3 %}
+        {% assign end_index = start_index | plus: 2 %}
+        {% for j in (start_index..end_index) %}
+          {% assign image = landscape_images[j] %}
+          {% if image %}
+            <img src="{{ image.path }}" alt="Landscape Image">
+          {% endif %}
+        {% endfor %}
+      </div>
+    {%- endif -%}
+  {% endfor %}
+</div>

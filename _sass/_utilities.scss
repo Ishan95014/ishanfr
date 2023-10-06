@@ -1,0 +1,18 @@
+/* Code highlighting */
+pre,
+.highlight {
+  background: var(--highlight-background);
+  color: var(--highlight-text);
+  border: 1px dotted var(--meta-color);
+  border-radius: 4px;
+}
+
+/* Animations */
+@keyframes tooltip-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

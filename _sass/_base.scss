@@ -1,0 +1,51 @@
+:root {
+  /* Color variables */
+  --background-color: #1d1f21;
+  --text-color: #c9cacc;
+  --truc: #fc0;
+  --heading-color: #c1ff9b;
+  --meta-color: #666;
+  --highlight-background: #20201d;
+  --highlight-text: #a6a28c;
+  --link-underline: #c9cacc;
+  --border-color: #c9cacc;
+}
+
+@font-face {
+  font-family: "MesloLGL-Bold";
+  src: url("/assets/fonts/MesloLGM-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MesloLGL";
+  src: url("/assets/fonts/MesloLGS-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Grenette Regular Pro";
+  src: url("/assets/fonts/grenette-regular-pro.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "MesloLGL", "Menlo", "Meslo LG", monospace;
+  font-size: 14px;
+  line-height: 1.725;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.content a.icon {
+  text-decoration: none;
+}
