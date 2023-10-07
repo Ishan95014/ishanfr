@@ -23,7 +23,7 @@ layout: default
         {% for j in (start_index..end_index) %}
           {% assign image = portrait_images[j] %}
           {% if image %}
-            <img src="{{ image.path }}" alt="Portrait Image">
+            <img src="{{ image.path }}" alt="Portrait Image" loading="lazy">
           {% endif %}
         {% endfor %}
       </div>
@@ -34,7 +34,7 @@ layout: default
         {% for j in (start_index..end_index) %}
           {% assign image = landscape_images[j] %}
           {% if image %}
-            <img src="{{ image.path }}" alt="Landscape Image">
+            <img src="{{ image.path }}" alt="Landscape Image" loading="lazy">
           {% endif %}
         {% endfor %}
       </div>
