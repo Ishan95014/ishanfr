@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut icon" href="/assets/images/logo_black.png" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" />
     {% include head.html %}
-    <title>{{ page.title }} | ishan </title>
-   
+    <title>{{ page.title }} | ishan</title>
   </head>
   <body class="max-width mx-auto px3 ltr">
     <div class="content index py4 h-card">
       {% include header.html %} {{ content }} {% include footer.html %}
     </div>
+    <script>
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: "dark",
+      });
+    </script>
   </body>
 </html>
