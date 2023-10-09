@@ -46,7 +46,7 @@ S->>W: Return data to browser
 {% endmermaid %}
 
 
-######### Deployment
+###### Deployment
 
 Hosted on Netlify. Configuration is in `netlify.toml`.
 
