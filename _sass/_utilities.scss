@@ -16,3 +16,9 @@ pre,
     opacity: 1;
   }
 }
+
+@media (max-aspect-ratio: 3/4) {
+  * {
+    margin: 0;
+  }
+}
