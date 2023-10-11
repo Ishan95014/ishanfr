@@ -19,6 +19,19 @@ pre,
 
 @media (max-aspect-ratio: 3/4) {
   content {
-    margin: 0;
+    max-width: fit-content;
+    margin: 5px;
+  }
+  .post {
+    margin-left: 0;
+  }
+  #nav li {
+    font-size: 2.5rem;
+  }
+  #header #title {
+    font-size: 3rem;
+  }
+  #header #logo {
+    height: 150px;
   }
 }
