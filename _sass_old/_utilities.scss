@@ -17,29 +17,25 @@ pre,
   }
 }
 
-@media (max-aspect-ratio: 4/3) {
+@media (max-aspect-ratio: 3/4) {
   .content {
-    max-width: fit-content !important;
-    margin: 5px !important;
+    max-width: fit-content;
+    margin: 5px;
   }
   .post {
-    margin-left: 0px !important;
+    margin-left: 0px;
   }
   #nav li {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
   #header #title {
-    font-size: 3rem !important;
+    font-size: 3rem;
   }
   #header #logo {
-    height: 8rem !important;
+    height: 3rem;
   }
   .showcase-container {
-    width: auto !important;
-    margin-top: 1rem !important;
-  }
-  .post-item {
-    font-size: 1.7rem !important;
-    margin-bottom: 0 !important;
+    width: auto;
+    margin-top: 1rem;
   }
 }

@@ -12,22 +12,13 @@
   max-width: calc(100% - 40px);
   margin: 0 auto 20px auto;
   gap: 20px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-/* Adjusting grids for specific image types */
-.portrait-grid {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.landscape-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.square-grid {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-.showcase-grid img {
-  width: 100%;
-  height: auto;
-}
+.portrait-grid { grid-template-columns: repeat(4, 1fr); }
+.landscape-grid { grid-template-columns: repeat(3, 1fr); }
+.square-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }

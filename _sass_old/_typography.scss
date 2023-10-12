@@ -1,10 +1,12 @@
-// Font Faces
+/* Font Faces */
 @font-face {
   font-family: "Neuton";
   src: url("Neuton-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
+
 
 @font-face {
   font-family: "MesloLGL";
@@ -13,48 +15,52 @@
   font-style: normal;
 }
 
-// Base Styles
+/* Base Styles */
 body {
   font-family: 'Merriweather Sans', sans-serif;
-  color: var(--text-color);
+  color: --text-color;
   font-size: 16px;
   line-height: 1.6;
 }
 
 p, th, td {
   text-align: left;
-  margin: 0.2em 0;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
 }
 
-// Links in headers
+/* Links in headers */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: var(--heading-color); 
-  text-decoration: underline;
+  text-decoration: underline; /* keep underline */
 }
 
-// Headings
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1em;
   font-weight: 700;
-  color: var(--heading-color);
+  color: var(--heading-color); 
   letter-spacing: 0.01em;
 }
 
-h1 {
+h1{
   margin-top: 0.5em;
-  font-size: 2.5em;
 }
 
+h1 { font-size: 2.5em; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.75em; }
 h4 { font-size: 1.5em; }
 h5 { font-size: 1.25em; }
 h6 { font-size: 1em; }
 
-// Content Sections
-#about, .post-list {
-  margin-bottom: 4rem;
-}
+/* ... Rest of your CSS remains the same ... */
+
+
+
+/* Content Sections */
+#about, .post-list { margin-bottom: 4rem; }
 
 .post-list {
   margin-top: 0;
@@ -72,36 +78,37 @@ h6 { font-size: 1em; }
 .post-item .meta, .meta {
   display: inline-block;
   width: 8em;
-  color: var(--meta-color);
+  color: var(--meta-color); /* Ensure this variable is defined or replace with a color code */
   margin-right: 0.5rem;
 }
 
 #writing .h1 { margin-bottom: 0; }
 
-// Lists
+/* Lists */
 ul, ol {
   padding-left: 2em;
   text-align: justify;
   list-style-position: outside;
+}
 
-  ul, ol {
-    margin: 0;
-    padding-left: 1em;
-  }
+ul ul, ol ul, ul ol, ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1em;
 }
 
 li { margin-bottom: 0.5em; }
 
-// Blockquotes
+/* Blockquotes */
 blockquote {
   margin: 1.5em 0;
   padding-left: 1.5em;
-  border-left: 3px solid var(--meta-color);
-  color: var(--meta-color);
+  border-left: 3px solid var(--meta-color); /* Ensure this variable is defined or replace with a color code */
+  color: var(--meta-color); /* Ensure this variable is defined or replace with a color code */
   font-style: italic;
 }
 
-// Inline and block-level code
+/* For inline code */
 code {
   background-color: rgba(27,31,35,0.05);
   padding: 0.2em 0.4em;
@@ -110,35 +117,39 @@ code {
   border-radius: 3px;
 }
 
+/* For block-level code */
 pre > code {
   display: block;
   padding: 1em;
   overflow-x: auto;
 }
 
-// Horizontal Rules
+/* Horizontal Rules */
 hr {
   margin: 2em 0;
   border: 0;
-  border-top: 1px solid var(--meta-color);
+  border-top: 1px solid var(--meta-color); /* Ensure this variable is defined or replace with a color code */
 }
 
-// Tables
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 1em 0;
-
-  th, td {
-    border: 1px solid var(--meta-color);
-    padding: 0.5em;
-  }
-
-  th { background-color: #f1f1f1; }
 }
 
-// Strong and Bold Text
-strong, b { font-weight: bold; }
+th, td {
+  border: 1px solid var(--meta-color); /* Ensure this variable is defined or replace with a color code */
+  padding: 0.5em;
+}
 
-// Meta color for date
-.date { color: var(--meta-color); }
+th { background-color: #f1f1f1; }
+
+/* Strong and Bold Text */
+strong, b {
+  font-weight: bold;
+}
+
+.date {
+  color: var(--meta-color);
+}

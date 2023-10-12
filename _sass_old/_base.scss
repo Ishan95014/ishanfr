@@ -1,5 +1,5 @@
 :root {
-  // Color Variables
+  /* Color variables */
   --background-color: #1d1f21;
   --text-color: #c9cacc;
   --truc: #fc0;
@@ -28,6 +28,8 @@
 @font-face {
   font-family: "Grenette Regular Pro";
   src: url("/assets/fonts/grenette-regular-pro.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -44,7 +46,6 @@ a {
   text-decoration: none;
 }
 
-.content a.icon,
-.content a {
+.content a.icon {
   text-decoration: none;
 }
