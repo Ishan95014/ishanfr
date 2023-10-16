@@ -2,11 +2,11 @@
 layout: default
 ---
 <div class="showcase-container">
-  {% assign portrait_links = site.data.imgur_links.portrait %}
-  {% assign landscape_links = site.data.imgur_links.landscape %}
+  {% assign portrait_images = site.static_files | where_exp: "image", "image.path contains '/assets/images/showcase/portrait/'" %}
+  {% assign landscape_images = site.static_files | where_exp: "image", "image.path contains '/assets/images/showcase/landscape/'" %}
   
-  {% assign portrait_rows = portrait_links.size | divided_by: 4 | ceil %}
-  {% assign landscape_rows = landscape_links.size | divided_by: 3 | ceil %}
+  {% assign portrait_rows = portrait_images.size | divided_by: 4 | ceil %}
+  {% assign landscape_rows = landscape_images.size | divided_by: 3 | ceil %}
   
   {% if portrait_rows > landscape_rows %}
     {% assign total_rows = portrait_rows %}
@@ -21,9 +21,9 @@ layout: default
         {% assign start_index = i | times: 4 %}
         {% assign end_index = start_index | plus: 3 %}
         {% for j in (start_index..end_index) %}
-          {% assign image_link = portrait_links[j] %}
-          {% if image_link %}
-            <img src="{{ image_link }}" alt="Portrait Image" loading="lazy">
+          {% assign image = portrait_images[j] %}
+          {% if image %}
+            <img src="{{ image.path }}" alt="Portrait Image" loading="lazy">
           {% endif %}
         {% endfor %}
       </div>
@@ -32,9 +32,9 @@ layout: default
         {% assign start_index = i | divided_by: 2 | times: 3 %}
         {% assign end_index = start_index | plus: 2 %}
         {% for j in (start_index..end_index) %}
-          {% assign image_link = landscape_links[j] %}
-          {% if image_link %}
-            <img src="{{ image_link }}" alt="Landscape Image" loading="lazy">
+          {% assign image = landscape_images[j] %}
+          {% if image %}
+            <img src="{{ image.path }}" alt="Landscape Image" loading="lazy">
           {% endif %}
         {% endfor %}
       </div>
