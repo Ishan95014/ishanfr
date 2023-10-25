@@ -3,6 +3,7 @@ layout: post
 title: Wind Use - Learn Serverless Functions
 date: 2023-10-07
 link: https://cours.ishan.fr
+thumbnail: /assets/images/thumbnails/wind.png
 ---
 ### Wind Energy Utilization Dashboard: A Project to Learn Serverless Functions
 
@@ -14,7 +15,7 @@ The average person's perception of the production factor of wind turbines is ext
 
 The page displays live wind energy utilization as a percentage of installed capacity. The color-coded background ranges from deep red for low utilization to deep green for high utilization. In fact this is probably overkill, as i've only ever seen it red. 
 
-![](../../../assets/images/screenshot_wind_ishan_fr.png)
+![](../../../assets/images/projects/wind_ishan_fr/screenshot_wind_ishan_fr.png)
 ###### Technologies and Learning Goals
 
 - **HTML, CSS, JavaScript**: The website is extremely simple.

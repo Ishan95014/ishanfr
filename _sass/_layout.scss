@@ -1,17 +1,28 @@
 .content {
-  max-width: 46rem;
+  max-width: 60vw;
   margin: 0 auto;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
-  a {
-    text-decoration: underline;
+  p {
+    a {
+      color: #fc0 !important;
+    }
+  }
+  h2 {
+    a {
+      color: #fc0 !important;
+    }
   }
 }
 
 img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+svg {
   width: 100%;
   border-radius: 0.3rem;
 }

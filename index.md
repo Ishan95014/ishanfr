@@ -13,6 +13,16 @@ hesitate to contact me !
 
 Find me on  .
 
+## Latest Projects
+
+<ul class="post-list">
+{% for project in site.projects limit:20 %}
+  <li class="post-item">
+    <span class="meta">{{ project.date | date: "%Y-%m-%d" }}</span>
+    <a href="{{ project.url }}">{{ project.title }}</a>
+  </li>
+{% endfor %}
+</ul>
 
 ## Latest Posts
 
@@ -24,6 +34,4 @@ Find me on  .
   </li>
 {% endfor %}
 </ul>
-
-
 
