@@ -38,8 +38,18 @@ pre,
     width: auto !important;
     margin-top: 1rem !important;
   }
+  .project-container {
+   margin: auto; 
+  }
   .post-item {
     font-size: 1.7rem !important;
     margin-bottom: 0 !important;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr !important; /* One card per line */
+  }
+  
+  .project-card {
+    width: 100% !important; /* Make the card take up the full width */
   }
 }
