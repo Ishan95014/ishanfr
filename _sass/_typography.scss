@@ -142,3 +142,56 @@ strong, b { font-weight: bold; }
 
 // Meta color for date
 .date { color: var(--meta-color); }
+
+// New for lsits
+/* Remove default list styles and add padding for custom checkbox */
+.task-list {
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+.task-list-item {
+  position: relative;
+  padding-left: 30px;  /* Make room for the custom checkbox */
+}
+
+/* Hide the native checkbox */
+.task-list-item-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Custom unchecked state using :before */
+.task-list-item-checkbox:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #8d9aa9;  /* Gray */
+  border-radius: 50%;  /* Make it circular */
+  transform: translate(-50%, -50%);
+}
+
+/* Custom checked state using :after */
+.task-list-item-checkbox:checked:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #8d9aa9;  /* Gray */
+  background-color: #fc0;  /* Fill color */
+  border-radius: 50%;  /* Make it circular */
+  transform: translate(-50%, -50%);
+}
