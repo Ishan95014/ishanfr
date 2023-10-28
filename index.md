@@ -11,8 +11,6 @@ the articles and news I find interesting. Enjoy reading and don't
 hesitate to contact me ! 
 {:.spacing-above}
 
-Find me on  .
-
 ## Latest Projects
 
 <ul class="post-list">
