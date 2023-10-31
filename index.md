@@ -11,6 +11,12 @@ the articles and news I find interesting. Enjoy reading and don't
 hesitate to contact me ! 
 {:.spacing-above}
 
+## Some of my interests 
+- Photogrpahy, Computational Photography, and Machines and Images, storing, computing, representing visual information
+- 3D, I loved discovering photogrametry as a kid
+- Mapping, that fits with computer representations of visual information, it's actually all kinds of information, the more complex the more interesting.
+- 
+
 ## Latest Projects
 
 <ul class="post-list">

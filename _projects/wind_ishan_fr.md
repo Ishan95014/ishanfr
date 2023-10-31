@@ -7,6 +7,8 @@ thumbnail: /assets/images/thumbnails/wind.png
 ---
 ### Wind Energy Utilization Dashboard: A Project to Learn Serverless Functions
 
+## Find it [here](https://wind.ishan.fr)
+
 ###### Introduction
 
 The average person's perception of the production factor of wind turbines is extremely exaggerated. I wanted to build a simple indicator in a couple of hours to be able to point to high-quality live data to dispel these beliefs. Mostly this was an excuse to learn about and implement serverless functions.

@@ -7,6 +7,9 @@ thumbnail: /assets/images/thumbnails/solax.png
 ---
 # Real-Time Energy Dashboard
 
+## Find it [here](https://solar.ishan.fr)
+
+
 ## The sitch
 
 My parents got solar panels on the roof and a battery pack. The provided dashboard, however, is not that good. The system does offer an api, though, so I made my own. 
