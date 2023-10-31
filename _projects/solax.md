@@ -7,7 +7,7 @@ thumbnail: /assets/images/thumbnails/solax.png
 ---
 # Real-Time Energy Dashboard
 
-## Find it [here](https://solar.ishan.fr)
+## Find it [here](https://solar.ishan.fr) (currently in the process of migrating servers, data is down)
 
 
 ## The sitch
@@ -19,7 +19,7 @@ My parents got solar panels on the roof and a battery pack. The provided dashboa
 The primary objective is to offer a centralized platform that can:
 
 - [X] Display real-time updates of key energy metrics at a glance
-- [ ] Visualize environmental data like grid emissions and emissions avoided.
+- [X] Visualize environmental data like grid emissions and emissions avoided.
 - [X] Show all indicators in understandable units
 - [ ] Display a ROI graph
 - [ ] Display a return on CO2 graph
