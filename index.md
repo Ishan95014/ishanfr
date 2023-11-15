@@ -12,13 +12,12 @@ hesitate to contact me !
 {:.spacing-above}
 
 ## Some of my interests 
-- Photogrpahy, Computational Photography, and Machines and Images, storing, computing, representing visual information
+- [Photography](), [Computational Photography](), and Machines and Images, Storing, Computing, representing visual information
 - 3D, I loved discovering photogrametry as a kid
 - Mapping, that fits with computer representations of visual information, it's actually all kinds of information, the more complex the more interesting.
-- 
+- And more every day !
 
 ## Latest Projects
-
 <ul class="post-list">
 {% for project in site.projects limit:20 %}
   <li class="post-item">
@@ -29,7 +28,6 @@ hesitate to contact me !
 </ul>
 
 ## Latest Posts
-
 <ul class="post-list">
 {% for post in site.posts limit:20 %}
   <li class="post-item">
