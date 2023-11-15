@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A list of websites you should visit
+title: Computational Photography
 date: 2023-09-24
 link: https://cours.ishan.fr
 ---
